@@ -84,6 +84,7 @@
     margin: .5rem;
     padding: 1rem;
     border-radius: 1rem;
+    cursor: pointer;
 }
 
 .pokemon .number {
@@ -145,6 +146,103 @@
     border: none;
     border-radius: 1rem;
 }
+
+#side {
+    position: fixed;
+    right: 0px;
+    top: 0px;
+}
+.pokemon-information {
+    height: auto;
+    width: 300px;
+    background-color: #6f38f6;
+    border-radius: 1rem 0 0 1rem;
+    transform: translateX(100%);
+    transition: transform 0.4s;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+
+
+.open {
+    transform: translateX(0%);
+    transition: transform 0.4s;
+}
+
+.pokemon-information  img {
+    max-width: 100%;
+    height: 9rem;
+}
+
+
+.pokemon-information  .pokemon-name {
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0.8rem;
+}
+
+.pokemon-information  .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    background-color: #181717;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.pokemon-information  h3 {
+    text-transform: capitalize;
+    font-size: 1.10rem;
+    margin: 1rem;
+    margin-top: 0;
+    color: #e7e7e7;
+}
+
+.pokemon-information  .box .pokemon-abilities,
+.pokemon-information  .box .pokemon-types
+ {
+    text-transform: capitalize; 
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+.pokemon-abilities li,
+.pokemon-types li
+{
+    padding: 6px 8px;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.pokemon-abilities li {
+    background-color: #fff;
+}
+
+.pokemon-information button {
+    text-transform: none;
+    background: #ffffff;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.3rem 2.5rem;
+    transition: all .2s;
+    cursor: pointer;
+}
+.pokemon-information button:hover {
+    background-color: #ffffffa3;
+}
+
 
 @media screen and (min-width: 380px) {
     .pokemons {
